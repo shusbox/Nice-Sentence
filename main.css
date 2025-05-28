@@ -1,0 +1,100 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.modal {
+  display: none;
+  width: 450px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 40px;
+  background-color: white;
+}
+
+.modal h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.Minput {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+input {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+.Mbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.Mbtn button {
+  padding: 12px 22px;
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  border-radius: 15px;
+  background-color: #e3e3e3;
+}
+
+.AddBtn {
+  transition: 0.2s;
+  box-sizing: border-box;
+  width: 400px;
+  margin-top: 50px;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #4089ff;
+}
+
+.Sentence {
+  transition: 0.2s;
+  box-sizing: border-box;
+  width: 500px;
+  margin: 15px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 0px #2734522d;
+  background-color: white;
+}
+
+.Sentence h1 {
+  margin: 0;
+  color: #4089ff;
+  font-size: 60px;
+  line-height: 55px;
+}
+
+.Sentence p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 300;
+}

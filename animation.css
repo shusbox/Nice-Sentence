@@ -1,0 +1,10 @@
+.AddBtn:hover {
+	transition: 0.2s;
+	color: #dcdcdc;
+	background-color: #3778e1;
+}
+
+.Sentence:hover {
+	transition: 0.2s;
+	transform: scale(1.05);
+}
