@@ -1,11 +1,21 @@
-main {
+main, .hide {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Pretendard', sans-serif;
 }
 
+#ModalBackground {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.333);
+}
+
 .modal {
+  z-index: 2;
   display: none;
   width: 450px;
   padding: 50px;
@@ -60,6 +70,7 @@ input {
 }
 
 .AddBtn {
+  cursor: pointer;
   transition: 0.2s;
   box-sizing: border-box;
   width: 400px;
@@ -73,6 +84,7 @@ input {
 }
 
 .Sentence {
+  cursor: default;
   transition: 0.2s;
   box-sizing: border-box;
   width: 500px;

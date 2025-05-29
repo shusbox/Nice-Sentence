@@ -1,6 +1,12 @@
 function modal() {
 	document.getElementById('modal').style.display = "flex";
+	document.getElementById('ModalBackground').style.display = "block";
 };
+
+function hide() {
+	document.getElementById('modal').style.display = 'none';
+	document.getElementById('ModalBackground').style.display = "none";
+}
 
 document.getElementById('submit').addEventListener('click', () => {
 	const title = document.getElementById('title').value;
@@ -16,11 +22,11 @@ document.getElementById('submit').addEventListener('click', () => {
 	
 	document.getElementById('title').value = '';
 	document.getElementById('description').value = '';
-	document.getElementById('modal').style.display = 'none';
+	hide();
 });
 
 document.getElementById('reset').addEventListener('click', () => {
 	document.getElementById('title').value = '';
 	document.getElementById('description').value = '';
-	document.getElementById('modal').style.display = 'none';
+	hide();
 });
