@@ -1,3 +1,16 @@
+// animation
+const Sentence = document.getElementById('Sentence');
+const FixBtn = document.getElementById('FixBtn');
+
+Sentence.addEventListener('mouseenter', () => {
+	FixBtn.style.display = "flex";
+});
+
+Sentence.addEventListener('mouseleave', () => {
+	FixBtn.style.display = "none";
+})
+
+// function
 function modal() {
 	document.getElementById('modal').style.display = "flex";
 	document.getElementById('ModalBackground').style.display = "block";
